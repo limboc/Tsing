@@ -8,7 +8,7 @@ public class TsingFactory {
     static TsingApi tsingIOSingleton = null;
 
 
-    public static TsingApi getGankIOSingleton() {
+    public static TsingApi getTsingIOSingleton() {
         synchronized (monitor) {
             if (tsingIOSingleton == null) {
                 tsingIOSingleton= new TsingRetrofit().getTsingService();
